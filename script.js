@@ -19,7 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
         foodList.innerHTML = "";
         foodItems.forEach((item, index) => {
             const li = document.createElement("li");
+            item.food = item.food.charAt(0).toUpperCase() + item.food.slice(1);
             li.textContent = `${item.food}: ${item.calories} cal`;
+            li.classList.add("item_food");
+            li.style.color = item.calories > 500 ? "red" : "green";
+            li.style.backgroundColor = item.calories > 500 ? "#ffcccc" : "#ccffcc";
+            li.style.transition = "background-color 0.3s ease";
             const deleteBtn = document.createElement("button");
             deleteBtn.textContent = "X";
             deleteBtn.addEventListener("click", () => {
@@ -53,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // **Fetching placeholder data**
     fetch("https://jsonplaceholder.typicode.com/posts/1")
         .then(response => response.json())
-        .then(data => console.log("Placeholder data:", data));
+        .then(data => {console.log("Placeholder data:", data)});
 
     renderList();
 });
