@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+form, ul, div {
+    margin: 20px auto;
+    max-width: 300px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #f4f4f4;
+    margin-bottom: 5px;
+}
+button {
+    cursor: pointer;
+}
