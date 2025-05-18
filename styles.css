@@ -1,22 +1,83 @@
+/* Apply a modern font and layout */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
+    padding: 20px;
 }
-form, ul, div {
-    margin: 20px auto;
-    max-width: 300px;
+
+/* Stylish heading */
+h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
+
+/* Style the form */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    background: #28a745;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Style the food list */
 ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
+
 li {
+    background: white;
+    padding: 10px;
+    margin: 5px auto;
+    max-width: 300px;
     display: flex;
     justify-content: space-between;
-    padding: 5px;
-    background: #f4f4f4;
-    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-button {
-    cursor: pointer;
+
+button#reset-button {
+    background: #dc3545;
+    margin-top: 15px;
+}
+
+button#reset-button:hover {
+    background: #c82333;
+}
+
+/* Style the total calorie display */
+#total-calories {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #333;
 }

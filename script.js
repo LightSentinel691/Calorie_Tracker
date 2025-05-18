@@ -50,5 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
         renderList();
     });
 
+    // **Fetching placeholder data**
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+        .then(response => response.json())
+        .then(data => console.log("Placeholder data:", data));
+
     renderList();
 });
