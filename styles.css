@@ -62,9 +62,10 @@ li {
     background: white;
     padding: 10px;
     margin: 5px auto;
-    max-width: 20rem;
+    max-width: 24rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -91,4 +92,15 @@ button#reset-button:hover {
     margin :0.5rem auto;
     padding: 0.5rem;
     list-style: none;
+}
+
+.delete-btn {
+   background: #28a745;
+   width: 20%; 
+   float: right;
+   margin: 0;
+}
+
+.delete-btn:hover {
+   background: #dc3545;
 }

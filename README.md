@@ -9,3 +9,4 @@
 - View total calories.
 - Persist data using cookies.
 - Reset the list.
+- If the food amount is not supplied, it defaults to 100g.
